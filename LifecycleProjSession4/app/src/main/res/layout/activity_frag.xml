@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".FragActivity"
+    >
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ed"/>
+    <FrameLayout
+        android:id="@+id/My_Container_1_ID"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:background="@color/yellow"
+        android:layout_below="@+id/ed">
+    </FrameLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/My_Container_3_ID"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/My_Container_1_ID"
+       >
+    </FrameLayout>
+
+</RelativeLayout>
