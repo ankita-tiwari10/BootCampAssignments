@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BasicEventActivity">
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:layout_centerHorizontal="true"
+
+        android:ems="10"
+        android:inputType="number"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:text="ADD"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="266dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textV"
+        android:background="@drawable/spinnerbackground"/>
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="149dp"
+        android:layout_height="40dp"
+       android:layout_below="@+id/textV"
+        android:layout_centerHorizontal="true"
+         />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/lincheck">
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pizza"
+       />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Coffee"
+        />
+    </LinearLayout>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+        android:layout_below="@+id/lincheck"
+        android:layout_centerHorizontal="true"
+        >
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="  Male"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="   Female"
+            android:layout_marginTop="20dp"
+            android:checked="false"
+
+            android:textSize="20dp" />
+    </RadioGroup>
+    <!--<DatePicker-->
+        <!--android:id="@+id/datePicker"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_below="@+id/radioGroup"/>-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:text="DatePicker"
+        android:id="@+id/DateButton">
+
+    </Button>
+</RelativeLayout>

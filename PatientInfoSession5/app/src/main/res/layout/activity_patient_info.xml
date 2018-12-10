@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PatientInfoActivity"
+    android:orientation="vertical"
+    android:weightSum="1"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:id="@+id/linear"
+        android:layout_weight="0.2"
+        >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    android:id="@+id/lin1"
+    android:layout_marginTop="15dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FirstName"
+        android:layout_weight="0.5"
+        android:paddingLeft="7dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LastName"
+        android:paddingRight="7dp"
+        android:layout_weight="0.5"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin1"
+        android:id="@+id/lin2"
+        android:weightSum="1">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:layout_weight="0.5"
+            android:paddingLeft="7dp"
+            android:id="@+id/edFirstName"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:paddingRight="15dp"
+            android:id="@+id/edLastName"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:id="@+id/lin3"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/lin2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diagnostic"
+            android:layout_weight="0.5"
+            android:paddingLeft="7dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Value"
+            android:id="@+id/tvValue"
+            android:visibility="invisible"
+            android:layout_weight="0.5"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin3"
+        android:id="@+id/lin4"
+        android:weightSum="1"
+        >
+
+        <Spinner
+            android:id="@+id/diag_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+
+            android:background="@drawable/spinnerbackground"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:id="@+id/edValue"
+            android:paddingRight="15dp"
+            android:visibility="invisible"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:id="@+id/lin5"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/lin4">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:layout_weight="0.5"
+            android:paddingLeft="7dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin5"
+        android:id="@+id/lin6"
+        android:weightSum="1"
+        >
+
+        <Spinner
+            android:id="@+id/date_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/spinnerbackground"/>
+
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:layout_below="@+id/linear"
+        android:gravity="center"
+android:layout_centerHorizontal="true"
+        android:id="@+id/linbutton">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonSave"
+          android:text="Save" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linbutton"
+android:layout_centerHorizontal="true"
+        android:id="@+id/lincustom">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttoListView"
+            android:text="Custom ListView" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lincustom"
+android:layout_centerHorizontal="true"
+        android:id="@+id/linbasic">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttobasic"
+            android:text="Basic Events" />
+    </LinearLayout>
+</RelativeLayout>
