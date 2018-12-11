@@ -24,4 +24,14 @@
         android:background="@color/colorPrimary"
         android:textColor="@android:color/white"
         android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/buttonforFragment1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fragment2"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/buttonforFragment"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"/>
 </RelativeLayout>

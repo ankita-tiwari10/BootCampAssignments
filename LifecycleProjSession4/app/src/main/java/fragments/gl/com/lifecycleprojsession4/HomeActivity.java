@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 public class HomeActivity extends AppCompatActivity {
     private static final String TAG = "LifeCycle";
-Button button;
+Button button,btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +22,7 @@ Button button;
 
         toast.show();
        button=findViewById(R.id.buttonforFragment) ;
+        btn=findViewById(R.id.buttonforFragment1);
        button.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
@@ -29,6 +30,13 @@ Button button;
                startActivity(intent);
            }
        });
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),Fragment2Activity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override

@@ -26,7 +26,7 @@
         android:layout_height="150dp"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/My_Container_1_ID"
-       >
+        >
     </FrameLayout>
 
 </RelativeLayout>
