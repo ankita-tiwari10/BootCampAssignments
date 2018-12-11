@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment2Activity"
+    android:orientation="horizontal"
+    android:layout_centerHorizontal="true"
+    android:gravity="center">
+    <FrameLayout
+        android:id="@+id/My_Container_1_ID"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@color/blue"
+        android:layout_below="@+id/ed"
+        android:layout_marginRight="7dp">
+    </FrameLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/My_Container_3_ID"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@color/green"
+        android:layout_toRightOf="@+id/My_Container_1_ID">
+    </FrameLayout>
+</RelativeLayout>
