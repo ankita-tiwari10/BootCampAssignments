@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Session7MultipleLanguage</string>
+    <string name="amount">Amount!</string>
+    <string name="years">Years</string>
+    <string name="rate">Rate</string>
+    <string name="calcInterest">Calculated Interest</string>
+    <string name="calculate_si">Calculate SI</string>
+    <string name="calculate_ci">Calculate CI</string>
+</resources>

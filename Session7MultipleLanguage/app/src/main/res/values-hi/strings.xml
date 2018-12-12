@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="app_name">Session7MultipleLanguage</string>
+        <string name="amount">राशि</string>
+        <string name="years">साल</string>
+        <string name="rate">दर</string>
+        <string name="calcInterest">गणना ब्याज</string>
+        <string name="calculate_si">गणना ब्याज</string>
+        <string name="calculate_ci">गणना ब्याज</string>
+</resources>
