@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Session8NavigationProject</string>
+    <string name="patient_info">Patient Information</string>
+    <string name="abt_info">About Information</string>
+    <string name="prog">Programming</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="AboutPatient">AboutPatient</string>
+    <string name="PatientInformation">PatientInformation</string>
+    <string name="ProgrammingFragment">ProgrammingFragment</string>
+
+</resources>
