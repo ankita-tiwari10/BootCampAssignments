@@ -5,14 +5,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:gravity="center">
+    android:gravity="center"
+    >
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/spinnerbackground"
+       android:layout_marginTop="15dp"
+       android:layout_marginLeft="15dp"
+       android:layout_marginRight="15dp"
+       android:layout_marginBottom="15dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:id="@+id/rel"
 
+    >
 
    <FrameLayout
        android:id="@+id/My_Container_1_ID"
        android:layout_width="@dimen/room_width"
        android:layout_height="@dimen/room_height"
-       android:background="@color/blue"
+       android:background="@drawable/layout_border"
        >
       <TextView
           android:layout_width="match_parent"
@@ -27,7 +42,7 @@
        android:id="@+id/My_Container_2_ID"
        android:layout_width="@dimen/room_width"
        android:layout_height="@dimen/room_height1"
-       android:background="@color/green"
+       android:background="@drawable/layoutborder2"
        android:layout_below="@+id/My_Container_1_ID"
        >
       <TextView
@@ -43,7 +58,7 @@
        android:id="@+id/My_Container_3_ID"
        android:layout_width="@dimen/room_width"
        android:layout_height="@dimen/room_width"
-       android:background="@color/yellow"
+       android:background="@drawable/borderlay3"
        android:layout_toRightOf="@+id/My_Container_1_ID">
 
       <TextView
@@ -58,7 +73,7 @@
        android:id="@+id/My_Container_4_ID"
        android:layout_width="@dimen/room_width"
        android:layout_height="@dimen/room_width"
-       android:background="@color/colorPrimary"
+       android:background="@drawable/layborder5"
        android:layout_below="@id/My_Container_3_ID"
        android:layout_toRightOf="@+id/My_Container_2_ID">
       <TextView
@@ -74,8 +89,8 @@
        android:layout_height="wrap_content"
        android:layout_below="@+id/My_Container_4_ID"
        android:layout_toRightOf="@id/My_Container_2_ID"
-       android:background="@drawable/spinnerbackground"
-       android:gravity="center">
+       android:gravity="center"
+       android:layout_marginTop="15dp">
       <FrameLayout
           android:layout_width="15dp"
           android:layout_height="@dimen/room_height2"
@@ -88,14 +103,20 @@
           android:layout_toRightOf="@+id/frag"
           android:layout_marginLeft="20dp"></FrameLayout>
    </LinearLayout>
+</RelativeLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/rel"
+android:id="@+id/lin2"
+       android:paddingTop="7dp"
+       android:weightSum="1"
+       android:orientation="horizontal">
 <LinearLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_below="@id/My_Container_2_ID"
     android:background="@drawable/simple_circle"
-    android:paddingTop="7dp"
-    android:id="@+id/lin"
-    android:orientation="horizontal">
+    android:layout_weight="0.5">
 
 </LinearLayout>
    <LinearLayout
@@ -113,4 +134,24 @@ android:layout_toRightOf="@+id/lin"
     android:background="@drawable/spinnerbackground"
     android:id="@+id/tv_pet"/>
    </LinearLayout>
+   </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:weightSum="1"
+          android:orientation="horizontal"
+          android:layout_below="@+id/lin2">
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="0.2"
+             android:background="@drawable/layborder5"></TextView>
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="0.8"
+             android:background="@drawable/layoutborder2"></TextView>
+
+      </LinearLayout>
+</RelativeLayout>
 </RelativeLayout>
