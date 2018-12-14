@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="room_width">150dp</dimen>
+    <dimen name="room_height">250dp</dimen>
+    <dimen name="room_height1">200dp</dimen>
+    <dimen name="room_height2">100dp</dimen>
+</resources>

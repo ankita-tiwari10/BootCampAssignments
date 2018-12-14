@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ChallengingProjectCustomView</string>
+    <string name="kitchen">Kitchen</string>
+    <string name="storeroom">Store Room</string>
+    <string name="bedroom">Bedroom</string>
+    <string name="hall">Hall</string>
+
+    <string-array name="BedRooms">
+        <item>Bed</item>
+        <item>Table</item>
+        <item>Dressing</item>
+        <item>sofa</item>
+        <item>tv</item>
+        <item>frames</item>
+        <item>dvd player</item>
+        <item>washroom</item>
+        <item>almirah</item>
+    </string-array>
+</resources>
